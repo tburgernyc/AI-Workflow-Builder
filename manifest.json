@@ -1,0 +1,114 @@
+{
+  "app_name": "Claude AI Assistant",
+  "description": "Integrate Claude AI into your Monday.com workspace to automate tasks, analyze data, and enhance productivity through natural language interactions",
+  "app_url": "https://monday-claude-integration.com",
+  "redirect_url": "https://monday-claude-integration.com/oauth/callback",
+  "webhook_url": "https://monday-claude-integration.com/webhooks",
+  "permissions": [
+    "boards:read",
+    "boards:write",
+    "workspaces:read",
+    "users:read",
+    "account:read",
+    "notifications:write",
+    "automations:read",
+    "automations:write"
+  ],
+  "features": [
+    {
+      "type": "board_view",
+      "name": "Claude AI Assistant",
+      "description": "AI-powered assistant for your boards",
+      "icon_url": "/assets/board-view-icon.svg",
+      "url": "https://monday-claude-integration.com/board-view"
+    },
+    {
+      "type": "item_view",
+      "name": "Claude AI Item Analysis",
+      "description": "Analyze items with Claude AI",
+      "icon_url": "/assets/item-view-icon.svg",
+      "url": "https://monday-claude-integration.com/item-view"
+    },
+    {
+      "type": "dashboard_widget",
+      "name": "Claude AI Insights",
+      "description": "Get AI-powered insights for your dashboard",
+      "icon_url": "/assets/dashboard-widget-icon.svg",
+      "url": "https://monday-claude-integration.com/dashboard-widget"
+    },
+    {
+      "type": "standalone_app",
+      "name": "Claude AI Conversation",
+      "description": "Have natural language conversations with Claude AI",
+      "icon_url": "/assets/conversation-icon.svg",
+      "url": "https://monday-claude-integration.com/conversation"
+    },
+    {
+      "type": "standalone_app",
+      "name": "Document Processing",
+      "description": "Process and analyze documents with Claude AI",
+      "icon_url": "/assets/document-icon.svg",
+      "url": "https://monday-claude-integration.com/document-processing"
+    },
+    {
+      "type": "standalone_app",
+      "name": "Subscription Management",
+      "description": "Manage your Claude AI subscription",
+      "icon_url": "/assets/subscription-icon.svg",
+      "url": "https://monday-claude-integration.com/subscription"
+    }
+  ],
+  "version": "1.0.0",
+  "developer_name": "Monday Claude Integration Team",
+  "developer_email": "support@monday-claude-integration.com",
+  "build": {
+    "frontend": {
+      "entry": "index.html",
+      "dist": "client/build"
+    },
+    "backend": {
+      "entry": "index.js",
+      "controllers": "controllers",
+      "utils": "utils",
+      "middleware": "middleware"
+    }
+  },
+  "min_sdk_version": "1.0.0",
+  "categories": ["productivity", "ai", "automation", "workflow", "data-analysis"],
+  "public_support_email": "support@monday-claude-integration.com",
+  "privacy_policy_url": "https://monday-claude-integration.com/privacy",
+  "terms_of_service_url": "https://monday-claude-integration.com/terms",
+  "pricing": {
+    "model": "subscription",
+    "tiers": [
+      {
+        "name": "Free",
+        "description": "Basic Claude AI assistance, limited conversation history",
+        "price": "0",
+        "currency": "USD",
+        "period": "month"
+      },
+      {
+        "name": "Basic",
+        "description": "Full Claude AI assistance, document processing, extended conversation history",
+        "price": "10",
+        "currency": "USD",
+        "period": "month"
+      },
+      {
+        "name": "Pro",
+        "description": "Advanced Claude AI assistance, priority processing, unlimited conversation history, advanced document analysis",
+        "price": "25",
+        "currency": "USD",
+        "period": "month"
+      },
+      {
+        "name": "Enterprise",
+        "description": "Dedicated Claude AI resources, custom integrations, advanced analytics, priority support",
+        "price": "Contact Sales",
+        "currency": "USD",
+        "period": "month"
+      }
+    ]
+  }
+}
